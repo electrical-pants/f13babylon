@@ -267,7 +267,6 @@
 	extra_damage = -6
 	can_scope = FALSE
 	can_bayonet = FALSE
-	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 1.75
 	spread = 19	//This is UNUSABLE. Gun SUCKS.
