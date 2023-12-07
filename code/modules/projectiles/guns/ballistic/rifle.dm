@@ -257,6 +257,25 @@
 	pump_sound = 'sound/weapons/boltpump.ogg'
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
 
+//Mosin Avtomat
+/obj/item/gun/ballistic/rifle/mosin/avtomat
+	name = "nagant machinegun"
+	desc = "A Mosin Nagant rifle modified to fire in full automatic."
+	icon_state = "avtomat"
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/avtomat
+	extra_penetration = 0
+	extra_damage = -6
+	can_scope = FALSE
+	can_bayonet = FALSE
+	is_automatic = TRUE
+	automatic = 1
+	autofire_shot_delay = 1.75
+	spread = 19	//This is UNUSABLE. Gun SUCKS.
+
+/obj/item/gun/ballistic/rifle/mosin/avtomat/shoot_live_shot(mob/living/user, pointblank = FALSE, mob/pbtarget, message = 1, stam_cost = 0)
+	..()
+	src.pump(user)
+
 //Lee-Enfield,SMLE 						Keywords: 7.62, Bolt-action, 10 rounds internal, very fast firing rate, high stamina cost on working bolt
 /obj/item/gun/ballistic/rifle/enfield
 	name = "Lee-Enfield rifle"

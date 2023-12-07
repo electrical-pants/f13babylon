@@ -6,6 +6,10 @@
 	max_ammo = 5
 	multiload = 1
 
+//Avtomat
+/obj/item/ammo_box/magazine/internal/boltaction/avtomat
+	max_ammo = 14
+
 /obj/item/ammo_box/magazine/internal/boltaction_enfield
 	name = "bolt action rifle internal magazine"
 	desc = "Oh god, this shouldn't be here"
